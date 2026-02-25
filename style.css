@@ -1,0 +1,183 @@
+
+body {
+background-color: #fae5ef;
+font-family: Arial, sans-serif;
+color: #07040f;
+margin: 20px;
+}
+h1 {
+color: #e29bf6;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+color: #010c18;
+text-align: left;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p {
+font-size: 18px;
+text-align: left;
+line-height: 1.5;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.daftar-produk {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+padding: 20px;
+}
+
+.produk {
+    background-color: rgb(201, 157, 208);
+    border: 1px solid #f1e5f2;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(rgb(210, 149, 218), green, blue, alpha);
+}
+
+.produk img {
+width: 150px;
+height: auto;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.produk h2 {
+font-size: 20px;
+color: rgb(105, 73, 101);
+}
+
+.produk h3 {
+font-size: 16px;
+color: beige;
+}
+
+.harga {
+font-weight: bold;
+color: rgb(88, 10, 66);
+}
+
+.deskripsi {
+font-size: 14px;
+color: rgb(249, 235, 246);
+}
+
+.artikel {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.artikel .penulis {
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.artikel .sampul {
+    width: 180px;
+    float: right;
+    margin: 0 0 20px 20px;
+    border: 1px solid #e4c5ed;
+    box-shadow: 2px 2px 6px rgba (0,0,0,0.1);
+}
+
+.artikel blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #701f5f;
+    color: rgb(29, 2, 31);
+    background-color: rgb(245, 236, 248);
+}
+
+.btn-kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 16px;
+    background-color: #eebbf3;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-kembali:hover {
+    background-color: rgb(228, 122, 212);
+}
+
+.formulir {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f7e8f3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,form select,form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #e974be;
+}
+
+form button {
+    background-color: #e7a4db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #914180;
+}
+
+nav {
+    background: linear-gradient(90deg, #e29bf6, #c99dd0);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+nav a:active {
+    background-color: #914180;
+}
+
+nav a.active {
+    background-color: white;
+    color: #914180;
+}
