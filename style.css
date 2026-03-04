@@ -181,3 +181,130 @@ nav a.active {
     background-color: white;
     color: #914180;
 }
+
+.halaman-kontak {
+    max-width: 1100px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.kontak-box h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 30px;
+    color: #7a2e6d;
+    margin-bottom: 30px;
+}
+
+.kontak-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0d8ea;
+}
+
+.kontak-item h3 {
+    font-size: 18px;
+    color: #5c2a4d;
+    margin-bottom: 8px;
+}
+
+.kontak-item p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #3a2a37;
+}
+
+.kontak-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .halaman-kontak {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
+
+.event-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.event-title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 32px;
+    color: #7a2e6d;
+    margin-bottom: 40px;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.event-card {
+    background: linear-gradient(145deg, #ffffff, #f9eef6);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.event-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #5c2a4d;
+}
+
+.event-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #3a2a37;
+}
+
+.tanggal {
+    font-weight: bold;
+    color: #a03c87;
+    margin-bottom: 10px;
+}
+
+/* Badge */
+.badge {
+    background-color: #d48ac7;
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.badge.diskon {
+    background-color: #914180;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .event-title {
+        font-size: 26px;
+    }
+}
